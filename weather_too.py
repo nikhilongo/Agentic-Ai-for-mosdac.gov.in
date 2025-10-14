@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDFH42cxWbXA4EUkZ1qyu2v_6Lq0qoLzMw"
+os.environ["GOOGLE_API_KEY"] = ""
 
 from langchain_google_genai import ChatGoogleGenerativeAI
 from weather_tool import weather_guess
@@ -47,3 +47,4 @@ builder.add_edge("tools", "format_answer")
 builder.add_edge("format_answer", END)
 
 graph = builder.compile()
+
