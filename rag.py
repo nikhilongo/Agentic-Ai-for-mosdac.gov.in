@@ -16,7 +16,7 @@ documents = load_filtered_docs_from_json("scraped_data.json")
 splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 docs = splitter.split_documents(documents)
 
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDFH42cxWbXA4EUkZ1qyu2v_6Lq0qoLzMw"
+os.environ["GOOGLE_API_KEY"] = ""
 embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.2)
 
@@ -99,3 +99,4 @@ graph_builder.add_edge("tools", "generate")
 graph_builder.add_edge("generate", END)
 
 graph = graph_builder.compile()
+
