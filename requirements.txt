@@ -1,0 +1,10 @@
+streamlit
+langchain
+langgraph
+langchain-google-genai
+langchain-chroma
+chromadb
+beautifulsoup4
+geopy
+python-dotenv
+requests
