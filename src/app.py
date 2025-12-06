@@ -21,6 +21,7 @@ if not os.path.exists("./chroma_isro"):
 
 # Input section
 user_input = st.text_input("Enter your query:", "what is tempreture in jaipur?")
+st.caption("(this can be slow, uploaded on free cloud services)")
 
 if st.button("Run"):
     if not user_input.strip():
